@@ -62,6 +62,7 @@ app.get('/', (req, res) => res.render('home'))
 // Ruta about
 app.get('/about', (req, res) => {
     // Código para manejar la ruta personalizada
+   // throw new Error ()
     const randomFortune=fortunes[Math.floor(Math.random()*fortunes.length)]
     res.render('about',{fortune: randomFortune})
 });
