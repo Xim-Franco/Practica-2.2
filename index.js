@@ -45,11 +45,6 @@ const pokemones = [
     }
     
     
-
-    
-    
-    
-    
 ]
 
 // Configurar handlebars como motor de vistas
