@@ -9,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 const fortunes = [
     "Catterpie",
     "Gastly",
@@ -61,8 +62,8 @@ app.get('/', (req, res) => res.render('home'))
 
 // Ruta about
 app.get('/about', (req, res) => {
-    // Código para manejar la ruta personalizada
-   // throw new Error ()
+    // Código pgara manejar la ruta personalizada
+  // throw new Error ()
     const randomFortune=fortunes[Math.floor(Math.random()*fortunes.length)]
     res.render('about',{fortune: randomFortune})
 });
